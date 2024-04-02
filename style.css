@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    position: relative;
+}
+
+#video-preview {
+    width: 100%;
+    max-width: 500px;
+}
+
+#barcode-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#barcode-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
