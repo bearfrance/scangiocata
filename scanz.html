@@ -94,8 +94,10 @@
               if (result) {
                 console.log(result)
                 document.getElementById('result').textContent = result.text
-				window.open('https://www.betaland.it/xsportapp/xsport_desktop/checkbet?ticket='+result.text+'&system_code=BETALAND&language=IT', '_blank');
-              }
+				window.open('https://www.betaland.it/xsportapp/xsport_mobile/checkbet?ticketId='+result.text+'&system_code=BETALAND&language=IT', '_blank');
+              // https://www.betaland.it/xsportapp/xsport_mobile/checkbet?ticketId=DF07E804022329CF2404&system_code=BETALAND&language=it
+			  
+			  }
               if (err && !(err instanceof ZXing.NotFoundException)) {
                 console.error(err)
                 document.getElementById('result').textContent = err
